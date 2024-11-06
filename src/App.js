@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Calender from './components/Calender';
+import Calender2 from './components/Calender2';
+import Accordian from './components/Accordian';
+import SideNav from './components/SideNav';
+import MainForm from './components/ReactHookForm/MainForm';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Man } from '@mui/icons-material';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Calender2/> */}
+      {/* <Calender/>*/}
+      {/* <Accordian/>  */}
+    <MainForm/>
+      {/* <Router>             
+       <SideNav />
+
+        <Routes>
+          <Route path="/Calender2" element={<Calender2 />} />  
+          <Route path="/dashboard" element={<Accordian />} />  
+        </Routes>
+      </Router> */}
     </div>
   );
 }
